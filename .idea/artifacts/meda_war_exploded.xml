@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="RESTfulExample:war exploded">
+  <artifact type="exploded-war" name="meda:war exploded">
     <output-path>$PROJECT_DIR$/target/RESTfulExample</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="MEDA/web/Web" />

@@ -16,7 +16,7 @@ public class PaymentService {
 	TransactionBo transactionBo;
 
 	@GET
-	@Path("/test")
+	@Path("/save")
 	public Response savePayment() {
 
 		String result = transactionBo.save();
