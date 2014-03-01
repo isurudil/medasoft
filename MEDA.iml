@@ -42,6 +42,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-spring:1.8" level="project" />
+    <orderEntry type="library" name="Maven: com.vaadin:vaadin:6.8.2" level="project" />
   </component>
 </module>
 
