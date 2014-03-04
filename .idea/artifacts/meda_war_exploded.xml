@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="meda:war exploded">
-    <output-path>$PROJECT_DIR$/target/RESTfulExample</output-path>
+    <output-path>$PROJECT_DIR$/target/meda</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="MEDA/web/Web" />
+      <element id="javaee-facet-resources" facet="meda/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="MEDA" />
+          <element id="module-output" name="meda" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.8" />
@@ -21,6 +21,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-spring:1.8" />
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin:6.8.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.6.8" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.6.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.0.5.RELEASE" />
         </element>
       </element>
     </root>

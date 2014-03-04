@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MEDA.iml" filepath="$PROJECT_DIR$/MEDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meda.iml" filepath="$PROJECT_DIR$/meda.iml" />
     </modules>
   </component>
 </project>

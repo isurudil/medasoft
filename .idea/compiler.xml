@@ -22,11 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="MEDA" />
+        <module name="meda" />
         <module name="RESTfulExample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="meda" target="1.6" />
       <module name="MEDA" target="1.6" />
       <module name="RESTfulExample" target="1.6" />
     </bytecodeTargetLevel>
