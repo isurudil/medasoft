@@ -1,29 +1,24 @@
 package com.medasoft.transaction.impl;
 
-import com.medasoft.config.SpringMongoConfig;
+import com.medasoft.config.MongoContextLoader;
 import com.medasoft.model.dto.User;
 import com.medasoft.transaction.UserLoginBo;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.data.mongodb.core.MongoOperations;
 
 /**
  * Created by isurud on 3/5/14.
  */
 public class UserLoginBoImpl implements UserLoginBo {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
-    MongoOperations mongoOperations = (MongoOperations) context.getBean("mongoTemplate");
-
+     MongoContextLoader mongoContextLoader =   new MongoContextLoader();
 
     @Override
     public String countAllUsers() {
         User user = new User();
-        user.set_id("2");
-        user.setPassword("dilshan");
+        user.set_id("3");
+        user.setPassword("prabha");
         user.setUsername("dilshan");
-        mongoOperations.save(user);
-        return "Hi Isuru Please Work";
+        mongoContextLoader.getMongoOperation().save(user);
+        return "Hi Please Work Always";
     }
 
 

@@ -35,8 +35,19 @@ public class UILoader extends Application
         window = new Window("MEDA");
         setMainWindow(window);
         LoginViewComponent loginViewComponent = new LoginViewComponent();
+
         window.getContent().setSizeFull();
         window.addComponent(loginViewComponent);
+
+//        Button btnLogin = loginViewComponent.getBtnLogin();
+//        btnLogin.addListener(new Button.ClickListener() {
+//            @Override
+//            public void buttonClick(Button.ClickEvent event) {
+//
+//
+//
+//            }
+//        });
         
        
     }

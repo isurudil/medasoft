@@ -19,6 +19,9 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
       </configuration>
+      <facet type="Vaadin" name="Vaadin Application">
+        <configuration vaadinUsedWebRootPathUrl="" vaadinGWTLocationPath="" vaadinVMOptions="-Xss8M -Xmx512M -XX:MaxPermSize=512M" vaadinJavaScriptStyle="Obfuscated" vaadinCompilerThreads="" />
+      </facet>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
@@ -34,17 +37,15 @@
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.8" level="project" />
     <orderEntry type="library" name="Maven: asm:asm:3.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.8" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:2.5.6.SEC03" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-spring:1.8" level="project" />
     <orderEntry type="library" name="Maven: com.vaadin:vaadin:6.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:3.0.5.RELEASE" level="project" />
