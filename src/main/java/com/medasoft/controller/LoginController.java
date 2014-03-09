@@ -1,45 +1,43 @@
 package com.medasoft.controller;
 
+import com.medasoft.view.LoginViewComponent;
+import com.vaadin.ui.PasswordField;
+import com.vaadin.ui.TextField;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-import java.security.Principal;
 
 @Controller
 public class LoginController {
- 
-	@RequestMapping(value="/welcome", method = RequestMethod.GET)
-	public String printWelcome(ModelMap model, Principal principal ) {
- 
-		String name = principal.getName();
-		model.addAttribute("username", name);
-		model.addAttribute("message", "Spring Security Custom Form example");
-		return "hello";
- 
-	}
- 
-	@RequestMapping(value="/login2", method = RequestMethod.GET)
-	public String login(ModelMap model) {
- 
-		return "login";
- 
-	}
-	
-	@RequestMapping(value="/loginfailed", method = RequestMethod.GET)
-	public String loginerror(ModelMap model) {
- 
-		model.addAttribute("error", "true");
-		return "login";
- 
-	}
-	
-	@RequestMapping(value="/logout", method = RequestMethod.GET)
-	public String logout(ModelMap model) {
- 
-		return "login";
- 
-	}
-	
+
+    private static final Logger LOGGER = Logger.getLogger(LoginController.class);
+
+    LoginViewComponent loginViewComponent;
+
+    TextField txtUser;
+    PasswordField txtPass;
+
+    String txtUserText;
+    String txtPassText;
+
+
+    public LoginController(LoginViewComponent loginViewComponent) {
+        this.loginViewComponent = loginViewComponent;
+    }
+
+    public void getDetails(){
+
+        txtPass = loginViewComponent.getTxtPass();
+        txtUser =  loginViewComponent.getTxtUser();
+
+        txtUserText = (String) txtUser.getValue();
+        txtPassText = (String) txtPass.getValue();
+
+        LOGGER.debug("Got text from Username"+txtUserText);
+        LOGGER.debug("Got text from Password"+txtPassText);
+        txtUser.setCaption(txtUserText);
+        txtPass.setCaption(txtPassText);
+
+
+
+    }
 }

@@ -19,7 +19,7 @@ public class GetUserService {
     UserLoginBo userLoginBo;
 
     @GET
-    @Path("/getuser")
+    @Path("/set")
     public Response getUser(){
 
          String result = userLoginBo.countAllUsers();

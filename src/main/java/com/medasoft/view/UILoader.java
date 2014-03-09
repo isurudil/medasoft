@@ -15,7 +15,9 @@
  */
 package com.medasoft.view;
 
+import com.medasoft.controller.LoginController;
 import com.vaadin.Application;
+import com.vaadin.ui.Button;
 import com.vaadin.ui.Window;
 
 import javax.ws.rs.Path;
@@ -28,27 +30,26 @@ import javax.ws.rs.Path;
 public class UILoader extends Application
 {
     private Window window;
-
+    Button btnLogin;
+    LoginController loginController;
     @Override
     public void init()
     {
         window = new Window("MEDA");
         setMainWindow(window);
         LoginViewComponent loginViewComponent = new LoginViewComponent();
+        loginController = new LoginController(loginViewComponent);
+        btnLogin = loginViewComponent.getBtnLogin();
+        btnLogin.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                loginController.getDetails();
+            }
+        });
 
         window.getContent().setSizeFull();
         window.addComponent(loginViewComponent);
 
-//        Button btnLogin = loginViewComponent.getBtnLogin();
-//        btnLogin.addListener(new Button.ClickListener() {
-//            @Override
-//            public void buttonClick(Button.ClickEvent event) {
-//
-//
-//
-//            }
-//        });
-        
        
     }
     

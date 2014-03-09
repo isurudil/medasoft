@@ -1,6 +1,5 @@
 package com.medasoft.view;
 
-import com.vaadin.data.validator.EmailValidator;
 import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Runo;
@@ -24,7 +23,7 @@ public class LoginViewComponent extends CustomComponent{
         txtUser.setWidth("300px");
         txtUser.setRequired(true);
         txtUser.setInputPrompt("Your username");
-        txtUser.addValidator(new EmailValidator("Username must be an email address"));
+      //  txtUser.addValidator(new EmailValidator("Username must be an email address"));
         txtUser.setInvalidAllowed(false);
 
         // Create the password input field
