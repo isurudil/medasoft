@@ -9,7 +9,8 @@
 	<context:component-scan base-package="com.medasoft.rest" />
 	
 	<bean id="transactionBo" class="com.medasoft.transaction.impl.TransactionBoImpl" />
-    <bean id="userLoginBo" class="com.medasoft.transaction.impl.UserLoginBoImpl"/>
+    <bean id="userLoginBo" class="com.medasoft.transaction.impl.AuthUserBoImpl"/>
+
     <!--<bean id="messageSource"-->
           <!--class="org.springframework.context.support.ResourceBundleMessageSource">-->
         <!--<property name="basenames">-->

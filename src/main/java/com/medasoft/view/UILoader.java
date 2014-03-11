@@ -19,6 +19,7 @@ import com.medasoft.controller.LoginController;
 import com.vaadin.Application;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Window;
+import org.apache.log4j.Logger;
 
 import javax.ws.rs.Path;
 
@@ -32,6 +33,7 @@ public class UILoader extends Application
     private Window window;
     Button btnLogin;
     LoginController loginController;
+    private static final Logger LOGGER = Logger.getLogger(UILoader.class);
     @Override
     public void init()
     {
@@ -39,11 +41,17 @@ public class UILoader extends Application
         setMainWindow(window);
         LoginViewComponent loginViewComponent = new LoginViewComponent();
         loginController = new LoginController(loginViewComponent);
+
+
         btnLogin = loginViewComponent.getBtnLogin();
         btnLogin.addListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                loginController.getDetails();
+                loginController.setDetails();
+                loginController.authUser();
+
+
+
             }
         });
 

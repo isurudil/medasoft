@@ -5,7 +5,8 @@ package com.medasoft.transaction;
  */
 public interface UserLoginBo {
 
-    public String countAllUsers();
+    public String getUserFromUsername(String username);
+
 
 
 }
