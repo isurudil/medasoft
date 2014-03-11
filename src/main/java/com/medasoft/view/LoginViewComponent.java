@@ -4,8 +4,8 @@ import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Runo;
 
-public class LoginViewComponent extends CustomComponent{
-	public static final String NAME = "login";
+public class LoginViewComponent extends CustomComponent {
+    public static final String NAME = "login";
 
     private final TextField txtUser;
 
@@ -13,9 +13,15 @@ public class LoginViewComponent extends CustomComponent{
 
     private final Button btnLogin;
 
+    private final Label lblWarning;
+
+    public Label getLblWarning() {
+        return lblWarning;
+    }
+
     public LoginViewComponent() {
         setSizeFull();
-        
+
         ThemeResource resource = new ThemeResource("../images/banner.jpg");
         Embedded image = new Embedded("", resource);
         // Create the user input field
@@ -23,7 +29,7 @@ public class LoginViewComponent extends CustomComponent{
         txtUser.setWidth("300px");
         txtUser.setRequired(true);
         txtUser.setInputPrompt("Your username");
-      //  txtUser.addValidator(new EmailValidator("Username must be an email address"));
+        //  txtUser.addValidator(new EmailValidator("Username must be an email address"));
         txtUser.setInvalidAllowed(false);
 
         // Create the password input field
@@ -37,46 +43,52 @@ public class LoginViewComponent extends CustomComponent{
         // Create login button
         btnLogin = new Button("Login");
 
+        //Create Warning Text
+        lblWarning = new Label();
+        lblWarning.setWidth("300px");
+        lblWarning.setValue("");
+
+
         // Add both to a panel
         VerticalLayout fields = new VerticalLayout();
+        fields.addComponent(lblWarning);
         fields.addComponent(txtUser);
         fields.addComponent(txtPass);
         fields.addComponent(btnLogin);
-       fields.setSpacing(true);
+        fields.setSpacing(true);
         //fields.setMargin(new MarginInfo(false, true, true, false));
         fields.setSizeUndefined();
-        
+
         // Add the banner
-        
-     // Use the resource
-     
-     
-        
-         // The view root layout
+
+        // Use the resource
+
+
+        // The view root layout
         VerticalLayout viewLayout = new VerticalLayout();
         viewLayout.addComponent(image);
         viewLayout.addComponent(fields);
         viewLayout.setSizeFull();
-        
+
         viewLayout.setComponentAlignment(fields, Alignment.TOP_CENTER);
         viewLayout.setComponentAlignment(image, Alignment.TOP_CENTER);
         viewLayout.setStyleName(Runo.LAYOUT_DARKER);
         setCompositionRoot(viewLayout);
     }
 
-    public Button getBtnLogin(){
+    public Button getBtnLogin() {
 
         return btnLogin;
 
     }
 
-    public TextField getTxtUser(){
+    public TextField getTxtUser() {
 
         return txtUser;
 
     }
 
-    public PasswordField getTxtPass(){
+    public PasswordField getTxtPass() {
 
         return txtPass;
 

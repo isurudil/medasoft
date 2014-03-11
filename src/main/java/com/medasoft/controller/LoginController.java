@@ -1,6 +1,8 @@
 package com.medasoft.controller;
 
 import com.medasoft.view.LoginViewComponent;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.PasswordField;
 import com.vaadin.ui.TextField;
 import org.apache.commons.httpclient.Header;
@@ -23,9 +25,10 @@ public class LoginController {
 
     TextField txtUser;
     PasswordField txtPass;
-
+    Button btnLogin;
     String txtUserText;
     String txtPassText;
+    Label lblWarning;
 
 
     public LoginController(LoginViewComponent loginViewComponent) {
@@ -37,7 +40,8 @@ public class LoginController {
 
         txtPass = loginViewComponent.getTxtPass();
         txtUser = loginViewComponent.getTxtUser();
-
+        btnLogin = loginViewComponent.getBtnLogin();
+        lblWarning = loginViewComponent.getLblWarning();
         this.txtUserText = (String) txtUser.getValue();
         this.txtPassText = (String) txtPass.getValue();
 
@@ -65,6 +69,14 @@ public class LoginController {
             LOGGER.debug("Query Success .... got password "+output+" for username "+txtUserText);
             mPost.releaseConnection( );
 
+            if(output.equals(txtPassText)) {
+
+                lblWarning.setCaption("Username or Password Valid");
+
+            }else {
+                lblWarning.setCaption("Username or Password Invalid");
+
+            }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (HttpException e) {
