@@ -1,6 +1,6 @@
 package com.medasoft.rest;
 
-import com.medasoft.transaction.UserLoginBo;
+import com.medasoft.transaction.AuthUserBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +17,12 @@ import javax.ws.rs.core.Response;
 public class AuthUserService {
 
     @Autowired
-    UserLoginBo userLoginBo;
+    AuthUserBo authUserBo;
 
     @POST
     @Path("/get/{username}")
     public Response getUser(@PathParam("username") String name){
-         String result = userLoginBo.getUserFromUsername(name);
+         String result = authUserBo.getUserFromUsername(name);
         return Response.status(200).entity(result).build();
 
     }

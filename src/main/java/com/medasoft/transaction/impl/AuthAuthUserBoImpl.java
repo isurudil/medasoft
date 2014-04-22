@@ -2,7 +2,7 @@ package com.medasoft.transaction.impl;
 
 import com.medasoft.config.MongoContextLoader;
 import com.medasoft.model.dto.User;
-import com.medasoft.transaction.UserLoginBo;
+import com.medasoft.transaction.AuthUserBo;
 import org.apache.log4j.Logger;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.query.Query;
 /**
  * Created by isurud on 3/5/14.
  */
-public class AuthUserBoImpl implements UserLoginBo {
+public class AuthAuthUserBoImpl implements AuthUserBo {
 
      MongoContextLoader mongoContextLoader =   new MongoContextLoader();
-    private static final Logger LOGGER = Logger.getLogger(AuthUserBoImpl.class);
+    private static final Logger LOGGER = Logger.getLogger(AuthAuthUserBoImpl.class);
 
 
     @Override
