@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.query.Query;
 /**
  * Created by isurud on 3/5/14.
  */
-public class AuthAuthUserBoImpl implements AuthUserBo {
+public class AuthUserBoImpl implements AuthUserBo {
 
      MongoContextLoader mongoContextLoader =   new MongoContextLoader();
-    private static final Logger LOGGER = Logger.getLogger(AuthAuthUserBoImpl.class);
+    private static final Logger LOGGER = Logger.getLogger(AuthUserBoImpl.class);
 
 
     @Override
