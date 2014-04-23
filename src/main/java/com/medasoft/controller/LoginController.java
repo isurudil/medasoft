@@ -1,5 +1,8 @@
 package com.medasoft.controller;
 
+import com.google.gson.Gson;
+import com.medasoft.model.response.UserLoginResponse;
+import com.medasoft.util.Configuration;
 import com.medasoft.view.LoginViewComponent;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
@@ -49,14 +52,16 @@ public class LoginController {
         LOGGER.debug("Got text from Password " + txtPassText);
     }
 
-    public void authUser(){
+    public void authUser() {
+        Gson gson = new Gson();
+        UserLoginResponse userLoginResponse;
 
         String url = "http://localhost:8080/meda/rest/user/get/";
         try {
             url = url + URLEncoder.encode(txtUserText, "UTF-8");
             HttpClient client = new HttpClient();
             PostMethod mPost = new PostMethod(url);
-            mPost.addParameter("username",txtUserText);
+            mPost.addParameter("username", txtUserText);
 
             Header mtHeader = new Header();
             mtHeader.setName("content-type");
@@ -65,15 +70,19 @@ public class LoginController {
             mtHeader.setValue("application/text");
             mPost.addRequestHeader(mtHeader);
             client.executeMethod(mPost);
-            String output = mPost.getResponseBodyAsString( );
-            LOGGER.debug("Query Success .... got password "+output+" for username "+txtUserText);
-            mPost.releaseConnection( );
+            String output = mPost.getResponseBodyAsString();
+            LOGGER.debug("Received Response : " + output);
+            userLoginResponse = gson.fromJson(output, UserLoginResponse.class);
+            LOGGER.debug("Query Success .... got password " + output + " for username " + txtUserText);
+            mPost.releaseConnection();
+            if (userLoginResponse.getStatus().equals(Configuration.SUCCESS_CODE_DEFAULT)) {
 
-            if(output.equals(txtPassText)) {
-
-                lblWarning.setCaption("Username or Password Valid");
-
-            }else {
+                if (userLoginResponse.getPassword().equals(txtPassText)) {
+                    lblWarning.setCaption("Username or Password Valid");
+                } else {
+                    lblWarning.setCaption("Username or Password Invalid");
+                }
+            } else {
                 lblWarning.setCaption("Username or Password Invalid");
 
             }
