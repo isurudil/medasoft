@@ -22,7 +22,6 @@ public class LoginViewComponent extends CustomComponent {
 
     public LoginViewComponent() {
         setSizeFull();
-
         ThemeResource resource = new ThemeResource("../images/banner.jpg");
         Embedded image = new Embedded("", resource);
         // Create the user input field
@@ -80,10 +79,10 @@ public class LoginViewComponent extends CustomComponent {
 
     }
 
-    private void clearFields() {
-        txtUser.setValue("");
-        txtPass.setValue("");
-        lblWarning.setValue("");
+    public void clearFields() {
+        this.txtUser.setValue("");
+        this.txtPass.setValue("");
+        this.lblWarning.setValue("");
     }
 
     public Button getBtnLogin() {
