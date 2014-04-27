@@ -72,6 +72,7 @@ public class LoginController {
         if(doctorRegistrationDetails != null){
             AddAppointmentViewComponent viewComponent = new AddAppointmentViewComponent();
             lblWarning.setCaption("Username or Password Valid");
+            System.out.println("sent dr name"+doctorRegistrationDetails.getdName());
             Window window = loginViewComponent.getApplication().getMainWindow();
             window.removeComponent(loginViewComponent);
             window.addComponent(viewComponent);

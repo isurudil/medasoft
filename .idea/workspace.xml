@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed71b3f7-9a1a-46d0-aa01-526b165cb852" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/images/banner.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/meda_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/meda_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/meda_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/meda_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTfulExample.iws" />
@@ -87,21 +79,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddAppointmentViewComponent.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AddAppointmentViewComponent.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="71" selection-start="820" selection-end="820" vertical-scroll-proportion="0.59889096" vertical-offset="0" max-vertical-offset="1350">
+            <state line="71" column="39" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1854">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1011#1012#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginViewComponent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1566">
+            <state line="182" column="16" selection-start="5881" selection-end="5881" vertical-scroll-proportion="0.4632207" vertical-offset="3043" max-vertical-offset="3600">
               <folding />
             </state>
           </provider>
@@ -234,12 +232,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/DoctorRegistrationDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/query/GetDoctorDetails.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppoinmentViewComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1142,16 +1140,16 @@
       <workItem from="1398182099806" duration="93000" />
       <workItem from="1398184595175" duration="3722000" />
       <workItem from="1398270954957" duration="5768000" />
-      <workItem from="1398606088277" duration="6783000" />
+      <workItem from="1398606088277" duration="11264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87408000" />
+    <option name="totallyTimeSpent" value="91889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1370" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1175,7 +1173,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16490166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18973562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1520,13 +1518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="35" selection-start="5976" selection-end="5976" vertical-scroll-proportion="0.46666667" vertical-offset="3141" max-vertical-offset="3600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.2/vaadin-6.8.2-sources.jar!/com/vaadin/ui/AbstractComponentContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="16" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="6714">
@@ -1540,13 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="30" selection-start="2667" selection-end="2667" vertical-scroll-proportion="1.1363636" vertical-offset="588" max-vertical-offset="1494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="17" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="864">
@@ -1556,17 +1540,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1566">
+        <state line="74" column="49" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.4431818" vertical-offset="1026" max-vertical-offset="1566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="43" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1512">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="71" selection-start="820" selection-end="820" vertical-scroll-proportion="0.59889096" vertical-offset="0" max-vertical-offset="1350">
+        <state line="71" column="39" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1854">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="16" selection-start="5881" selection-end="5881" vertical-scroll-proportion="0.4632207" vertical-offset="3043" max-vertical-offset="3600">
+          <folding />
         </state>
       </provider>
     </entry>

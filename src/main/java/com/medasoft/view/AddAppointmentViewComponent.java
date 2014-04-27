@@ -17,6 +17,21 @@ public class AddAppointmentViewComponent extends CustomComponent {
     private final ComboBox comboBox = new ComboBox("Patient Title");
     private final Button btnAddAppoinment = new Button("Add Appointment");
     private final Button btnClearDetails = new Button("Clear Details");
+    private final Button btnSignOut = new Button("Sign Out");
+    public final Label txtWelcome = new Label("Welcome ");
+    public String dName="";
+
+    public TextField getTxtDoctorCode() {
+        return txtDoctorCode;
+    }
+
+    public TextField getTxtDoctorName() {
+        return txtDoctorName;
+    }
+
+    public Label getTxtWelcome() {
+        return txtWelcome;
+    }
 
     private final TextField txtAppointmentDate = new TextField();
 
@@ -43,27 +58,40 @@ public class AddAppointmentViewComponent extends CustomComponent {
         form.addComponent(txtClinicType);
         form.addComponent(txtPatientName);
         form.addComponent(comboBox);
-        form.addComponent(btnAddAppoinment);
         form.setSizeUndefined();
         form.setSpacing(true);
 
 
         form.setMargin(new Layout.MarginInfo(false, true, true, false));
 
+        HorizontalLayout buttonLayout = new HorizontalLayout();
+        buttonLayout.addComponent(btnAddAppoinment);
+        buttonLayout.addComponent(btnClearDetails);
+
         VerticalLayout emptyLayout = new VerticalLayout();
-        emptyLayout.setHeight("150px");
+        emptyLayout.setHeight("100px");
 
-        VerticalLayout verticalLayout = new VerticalLayout();
-        verticalLayout.addComponent(image);
-        verticalLayout.addComponent(emptyLayout);
-        verticalLayout.addComponent(form);
+        VerticalLayout containerLayout = new VerticalLayout();
+        containerLayout.addComponent(image);
+        containerLayout.addComponent(txtWelcome);
+        containerLayout.addComponent(btnSignOut);
+        containerLayout.addComponent(emptyLayout);
+        containerLayout.addComponent(form);
+        containerLayout.addComponent(buttonLayout);
 
-        verticalLayout.setSizeFull();
+        containerLayout.setSizeUndefined();
+        txtWelcome.setValue("Welcome Dr."+dName);
+        containerLayout.setComponentAlignment(form, Alignment.TOP_CENTER);
+        containerLayout.setComponentAlignment(image, Alignment.TOP_CENTER);
+        containerLayout.setComponentAlignment(buttonLayout, Alignment.TOP_CENTER);
+        containerLayout.setComponentAlignment(txtWelcome, Alignment.TOP_LEFT);
+        containerLayout.setStyleName(Runo.LAYOUT_DARKER);
 
-        verticalLayout.setComponentAlignment(form, Alignment.TOP_CENTER);
-        verticalLayout.setComponentAlignment(image, Alignment.TOP_CENTER);
-        verticalLayout.setStyleName(Runo.LAYOUT_DARKER);
-        setCompositionRoot(verticalLayout);
+        VerticalLayout mainLayout = new VerticalLayout();
+        mainLayout.setSizeFull();
+        mainLayout.addComponent(containerLayout);
+        mainLayout.setComponentAlignment(containerLayout, Alignment.TOP_CENTER);
+        setCompositionRoot(mainLayout);
 
     }
 }
