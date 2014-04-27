@@ -40,20 +40,6 @@ public class UILoader extends Application
         window = new Window("MEDIC");
         setMainWindow(window);
         LoginViewComponent loginViewComponent = new LoginViewComponent();
-        loginController = new LoginController(loginViewComponent);
-
-
-        btnLogin = loginViewComponent.getBtnLogin();
-        btnLogin.addListener(new Button.ClickListener() {
-            @Override
-            public void buttonClick(Button.ClickEvent event) {
-                loginController.setDetails();
-                loginController.authUser();
-
-
-
-            }
-        });
 
         window.getContent().setSizeFull();
         window.addComponent(loginViewComponent);

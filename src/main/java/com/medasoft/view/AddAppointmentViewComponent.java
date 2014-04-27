@@ -1,5 +1,6 @@
 package com.medasoft.view;
 
+import com.medasoft.util.Session;
 import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Runo;
@@ -19,7 +20,11 @@ public class AddAppointmentViewComponent extends CustomComponent {
     private final Button btnClearDetails = new Button("Clear Details");
     private final Button btnSignOut = new Button("Sign Out");
     public final Label txtWelcome = new Label("Welcome ");
-    public String dName="";
+    private String dName="";
+
+    public void setdName(String dName) {
+        this.dName = dName;
+    }
 
     public TextField getTxtDoctorCode() {
         return txtDoctorCode;
@@ -70,7 +75,9 @@ public class AddAppointmentViewComponent extends CustomComponent {
 
         VerticalLayout emptyLayout = new VerticalLayout();
         emptyLayout.setHeight("100px");
-
+        String welcomeText = "Welcome Dr."+ Session.getSessionDetails().getdName();
+        System.out.println("Welcome Dr."+ Session.getSessionDetails().getdName());
+        txtWelcome.setValue(welcomeText);
         VerticalLayout containerLayout = new VerticalLayout();
         containerLayout.addComponent(image);
         containerLayout.addComponent(txtWelcome);
@@ -80,18 +87,48 @@ public class AddAppointmentViewComponent extends CustomComponent {
         containerLayout.addComponent(buttonLayout);
 
         containerLayout.setSizeUndefined();
-        txtWelcome.setValue("Welcome Dr."+dName);
         containerLayout.setComponentAlignment(form, Alignment.TOP_CENTER);
         containerLayout.setComponentAlignment(image, Alignment.TOP_CENTER);
         containerLayout.setComponentAlignment(buttonLayout, Alignment.TOP_CENTER);
         containerLayout.setComponentAlignment(txtWelcome, Alignment.TOP_LEFT);
         containerLayout.setStyleName(Runo.LAYOUT_DARKER);
-
+        containerLayout.addStyleName(Runo.PANEL_LIGHT);
         VerticalLayout mainLayout = new VerticalLayout();
         mainLayout.setSizeFull();
         mainLayout.addComponent(containerLayout);
         mainLayout.setComponentAlignment(containerLayout, Alignment.TOP_CENTER);
         setCompositionRoot(mainLayout);
 
+    }
+
+    public void setButtonListners(final AddAppointmentViewComponent viewComponent,final LoginViewComponent loginViewComponent){
+        btnAddAppoinment.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                System.out.println("Add");
+
+            }
+        });
+        btnClearDetails.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                System.out.println("Clear");
+            }
+        });
+        btnSignOut.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                Window window= viewComponent.getApplication().getMainWindow();
+                if(window != null){
+                    window.removeComponent(viewComponent);
+                    window.addComponent(loginViewComponent);
+
+                    System.out.println("Window is null");
+                }else {
+                    System.out.println("Window is not null");
+                }
+
+            }
+        });
     }
 }

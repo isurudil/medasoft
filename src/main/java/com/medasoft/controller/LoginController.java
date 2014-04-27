@@ -2,6 +2,7 @@ package com.medasoft.controller;
 
 import com.medasoft.model.dto.DoctorRegistrationDetails;
 import com.medasoft.query.GetDoctorDetails;
+import com.medasoft.util.Session;
 import com.medasoft.view.AddAppointmentViewComponent;
 import com.medasoft.view.LoginViewComponent;
 import com.vaadin.ui.*;
@@ -27,6 +28,9 @@ public class LoginController {
         this.loginViewComponent = loginViewComponent;
     }
 
+    public LoginViewComponent getLoginViewComponent() {
+        return loginViewComponent;
+    }
 
     public void setDetails() {
 
@@ -70,11 +74,14 @@ public class LoginController {
 //        }
         DoctorRegistrationDetails doctorRegistrationDetails = new GetDoctorDetails(txtUserText,txtPassText).findDoctor();
         if(doctorRegistrationDetails != null){
+            Session.setSessionDetails(doctorRegistrationDetails);
             AddAppointmentViewComponent viewComponent = new AddAppointmentViewComponent();
             lblWarning.setCaption("Username or Password Valid");
-            System.out.println("sent dr name"+doctorRegistrationDetails.getdName());
+            System.out.println("sent dr name "+doctorRegistrationDetails.getdName());
             Window window = loginViewComponent.getApplication().getMainWindow();
+            viewComponent.setButtonListners(viewComponent, loginViewComponent);
             window.removeComponent(loginViewComponent);
+            System.out.println("Set session details " + Session.getSessionDetails().getdName());
             window.addComponent(viewComponent);
         }else {
             lblWarning.setCaption("Username or Password Invalid");

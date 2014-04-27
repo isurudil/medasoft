@@ -1,5 +1,6 @@
 package com.medasoft.view;
 
+import com.medasoft.controller.LoginController;
 import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.Runo;
@@ -9,7 +10,7 @@ public class LoginViewComponent extends CustomComponent {
 
     private final TextField txtUser;
 
-    private final PasswordField txtPass;
+    private final PasswordField txtPass = new PasswordField("Password");
 
     private final Button btnLogin;
 
@@ -25,15 +26,15 @@ public class LoginViewComponent extends CustomComponent {
         ThemeResource resource = new ThemeResource("../images/banner.jpg");
         Embedded image = new Embedded("", resource);
         // Create the user input field
-        txtUser = new TextField("User:");
+        txtUser = new TextField("User");
         txtUser.setWidth("300px");
         txtUser.setRequired(true);
-        txtUser.setInputPrompt("Your username");
+        txtUser.setInputPrompt("Your Doctor Code");
+        txtPass.setInputPrompt("Your Password");
         //  txtUser.addValidator(new EmailValidator("Username must be an email address"));
         txtUser.setInvalidAllowed(false);
 
         // Create the password input field
-        txtPass = new PasswordField("Password:");
         txtPass.setWidth("300px");
         //password.addValidator(new PasswordValidator());
         txtPass.setRequired(true);
@@ -74,6 +75,15 @@ public class LoginViewComponent extends CustomComponent {
         viewLayout.setComponentAlignment(image, Alignment.TOP_CENTER);
         viewLayout.setStyleName(Runo.LAYOUT_DARKER);
         setCompositionRoot(viewLayout);
+
+        setListners();
+
+    }
+
+    private void clearFields() {
+        txtUser.setValue("");
+        txtPass.setValue("");
+        lblWarning.setValue("");
     }
 
     public Button getBtnLogin() {
@@ -92,6 +102,18 @@ public class LoginViewComponent extends CustomComponent {
 
         return txtPass;
 
+    }
+
+    public void setListners(){
+        final LoginController loginController = new LoginController(this);
+        btnLogin.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                loginController.setDetails();
+                loginController.authUser();
+                clearFields();
+            }
+        });
     }
 
 }
