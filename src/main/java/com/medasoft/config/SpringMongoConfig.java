@@ -1,6 +1,6 @@
 package com.medasoft.config;
 
-import com.mongodb.MongoURI;
+import com.mongodb.MongoClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -13,8 +13,7 @@ public class SpringMongoConfig {
 
     public @Bean
     MongoDbFactory mongoDbFactory() throws Exception{
-        MongoURI mongoClientURI = new MongoURI("mongodb://isuru:test123#@oceanic.mongohq.com:10054/meda");
-       return  new SimpleMongoDbFactory(mongoClientURI);
+       return new SimpleMongoDbFactory(new MongoClient("localhost"),"medic");
 
     }
 

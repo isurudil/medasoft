@@ -37,7 +37,7 @@ public class UILoader extends Application
     @Override
     public void init()
     {
-        window = new Window("MEDA");
+        window = new Window("MEDIC");
         setMainWindow(window);
         LoginViewComponent loginViewComponent = new LoginViewComponent();
         loginController = new LoginController(loginViewComponent);
@@ -59,6 +59,9 @@ public class UILoader extends Application
         window.addComponent(loginViewComponent);
 
        
+    }
+    public Window getMainWindow(){
+        return window;
     }
     
 }

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed71b3f7-9a1a-46d0-aa01-526b165cb852" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/images/banner.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/meda_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/meda_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/meda_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/meda_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTfulExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,19 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/util/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestClient.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RestClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="932" selection-end="932" vertical-scroll-proportion="0.56360424" vertical-offset="203" max-vertical-offset="936">
+            <state line="29" column="32" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="936">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,28 +87,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java">
+      <file leaf-file-name="AddAppointmentViewComponent.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="30" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="1296">
+            <state line="18" column="71" selection-start="820" selection-end="820" vertical-scroll-proportion="0.59889096" vertical-offset="0" max-vertical-offset="1350">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginViewComponent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="0" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1566">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Response.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/response/Response.java">
+      <file leaf-file-name="AbstractComponentContainer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.2/vaadin-6.8.2-sources.jar!/com/vaadin/ui/AbstractComponentContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="107" column="16" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="6714">
               <folding>
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#0#14197#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1156#1183#0" expanded="false" />
+                <element signature="e#1690#1701#0" expanded="false" />
+                <element signature="e#2348#2359#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetDoctorDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/query/GetDoctorDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="124" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="990">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,13 +136,8 @@
       <file leaf-file-name="UserLoginResponse.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/response/UserLoginResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="27" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-              <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-              </folding>
+            <state line="16" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="432">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +145,7 @@
       <file leaf-file-name="AuthUserBoImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/AuthUserBoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1098">
+            <state line="18" column="41" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
@@ -140,26 +154,13 @@
       <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionBoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/TransactionBoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewAppointmentService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/rest/ViewAppointmentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-              <folding />
+            <state line="20" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="684">
+              <folding>
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +168,16 @@
       <file leaf-file-name="SpringMongoConfig.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="85" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="15" column="17" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoctorRegistrationDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/DoctorRegistrationDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="19" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="486">
               <folding />
             </state>
           </provider>
@@ -182,6 +192,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/medasoft/query/GetDoctorDetails.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -200,27 +214,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/config/ContextLoader.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/UserLoginBoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/status-codes.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/UserLoginBo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/rest/GetUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/AuthenticateUserBoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/rest/AuthUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/ViewAppoinments.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/rest/ViewAppoinmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/rest/ViewAppointmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/ViewAppoinmentsBo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/ViewAppointmentBo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/model/response/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/model/response/UserLoginResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/AuthUserBoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/DoctorRegistrationDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/query/GetDoctorDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppoinmentViewComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java" />
       </list>
     </option>
   </component>
@@ -246,7 +265,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="MEDASOFT" />
+          <option name="myItemId" value="MEDIC" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -256,7 +275,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="MEDASOFT" />
+          <option name="myItemId" value="MEDIC" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -269,7 +288,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="-4" />
-    <option name="width" value="1368" />
+    <option name="width" value="1370" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -580,6 +599,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTfulExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -615,6 +664,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,8 +733,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,14 +760,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.medasoft.model.dto" />
+      <recent name="com.medasoft.query" />
       <recent name="com.medasoft.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/images" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/com/medasoft/view" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/medasoft" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes" />
@@ -1087,14 +1142,15 @@
       <workItem from="1398182099806" duration="93000" />
       <workItem from="1398184595175" duration="3722000" />
       <workItem from="1398270954957" duration="5768000" />
+      <workItem from="1398606088277" duration="6783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80625000" />
+    <option name="totallyTimeSpent" value="87408000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="-1" y="-4" width="1370" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1102,7 +1158,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1505216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14975846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1117,9 +1173,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16544656" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16490166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23645681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18973562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1150,32 +1206,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="153" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/rest/AuthUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/AuthUserBo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/AuthUserBo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="540">
@@ -1348,27 +1378,6 @@
         <state line="2" column="66" selection-start="119" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="35" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/AuthUserBo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.36809817" vertical-offset="0" max-vertical-offset="489">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/ViewAppointmentBo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="34" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
@@ -1379,13 +1388,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/ViewAppointmentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="35" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
@@ -1404,13 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="0" selection-start="5831" selection-end="5831" vertical-scroll-proportion="0.716263" vertical-offset="2754" max-vertical-offset="3600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/TransactionBoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
@@ -1418,53 +1413,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="85" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/response/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="24" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/util/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="24" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/rest/AuthUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="450" selection-end="450" vertical-scroll-proportion="0.42639595" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1044">
           <folding />
         </state>
       </provider>
@@ -1476,6 +1434,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/response/UserLoginResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="936">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="684">
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/config/SpringMongoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/dto/DoctorRegistrationDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/AuthUserBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/rest/AuthUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="674" selection-end="674" vertical-scroll-proportion="0.75" vertical-offset="24" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="42" selection-start="1922" selection-end="1922" vertical-scroll-proportion="1.097561" vertical-offset="432" max-vertical-offset="1044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/query/GetDoctorDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="124" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="990">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/transaction/impl/AuthUserBoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="41" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1098">
@@ -1483,28 +1520,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/model/response/UserLoginResponse.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+        <state line="185" column="35" selection-start="5976" selection-end="5976" vertical-scroll-proportion="0.46666667" vertical-offset="3141" max-vertical-offset="3600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.2/vaadin-6.8.2-sources.jar!/com/vaadin/ui/AbstractComponentContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="16" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="6714">
           <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#0#14197#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1156#1183#0" expanded="false" />
+            <element signature="e#1690#1701#0" expanded="false" />
+            <element signature="e#2348#2359#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="30" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="1296">
+        <state line="72" column="30" selection-start="2667" selection-end="2667" vertical-scroll-proportion="1.1363636" vertical-offset="588" max-vertical-offset="1494">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/util/RestClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/UILoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="932" selection-end="932" vertical-scroll-proportion="0.56360424" vertical-offset="203" max-vertical-offset="936">
+        <state line="44" column="17" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/LoginViewComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/medasoft/view/AddAppointmentViewComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="71" selection-start="820" selection-end="820" vertical-scroll-proportion="0.59889096" vertical-offset="0" max-vertical-offset="1350">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

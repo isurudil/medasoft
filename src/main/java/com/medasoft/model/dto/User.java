@@ -12,15 +12,15 @@ public class User {
 
     @Id
     private String _id;
-    String username;
     String password;
+    String dName;
 
-    public String getUsername() {
-        return username;
+    public String getdName() {
+        return dName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setdName(String dName) {
+        this.dName = dName;
     }
 
     public String getPassword() {
